@@ -108,8 +108,6 @@ stages:
       - job: nuget
         displayName: Nuget
         dependsOn: semantic_release
-        workspace:
-          clean: all
         steps:
           - script: |
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
