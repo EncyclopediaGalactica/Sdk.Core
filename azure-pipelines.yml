@@ -111,7 +111,6 @@ stages:
         steps:
           - script: |
               git fetch --all
-              git pull --all
             displayName: repo refresh
           - script: |
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
