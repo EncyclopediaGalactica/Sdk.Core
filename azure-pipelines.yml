@@ -112,6 +112,7 @@ stages:
           - script: |
               git fetch --all
               git pull --all
+            displayName: repo refresh
           - script: |
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
               dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
