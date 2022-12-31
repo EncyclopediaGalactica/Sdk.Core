@@ -1,3 +1,10 @@
+## [0.0.2](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.1...0.0.2) (2022-12-31)
+
+
+### Bug Fixes
+
+* next fix ([dae9678](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/dae9678a64ecd95d07b710f8c5745c81aa7033d6))
+
 ## [0.0.1](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.0...0.0.1) (2022-12-31)
 
 
