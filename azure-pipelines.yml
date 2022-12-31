@@ -108,10 +108,12 @@ stages:
       - job: nuget
         displayName: Nuget
         dependsOn: semantic_release
+        workspace:
+          clean: all
         steps:
           - script: |
-              dotnet pack Core/Core.csproj --configuration Release --include-symbols --version-suffix `cat version.txt` -p:NuspecFile=Core.nuspec
-              dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols --version-suffix `cat version.txt` -p:NuspecFile=Interfaces.nuspec
+              dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
+              dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
             displayName: packaging
 
           - script: |
