@@ -8,7 +8,7 @@ using Model.Interfaces;
 public interface ISdkCore
 {
     /// <summary>
-    ///
+    ///<remarks></remarks>
     /// </summary>
     /// <param name="httpRequestMessage"></param>
     /// <param name="cancellationToken"></param>
