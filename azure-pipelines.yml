@@ -108,10 +108,12 @@ stages:
       - job: nuget
         displayName: Nuget
         dependsOn: semantic_release
+        workspace:
+          clean: all
         steps:
-          - script: |
-              git fetch --all
-            displayName: repo refresh
+#          - script: |
+#              git fetch --all
+#            displayName: repo refresh
           - script: |
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
               dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
