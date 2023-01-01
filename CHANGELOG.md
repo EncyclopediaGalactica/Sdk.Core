@@ -1,3 +1,10 @@
+## [0.0.16](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.15...0.0.16) (2023-01-01)
+
+
+### Bug Fixes
+
+* nuspec fixes ([#18](https://github.com/EncyclopediaGalactica/Sdk.Core/issues/18)) ([bdf18e7](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/bdf18e77711422814bada30991af365d21767d8a))
+
 ## [0.0.15](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.14...0.0.15) (2023-01-01)
 
 
