@@ -108,18 +108,10 @@ stages:
               echo "COMMAND===>"
               cat version.txt
               echo "COMMAND===>"
-
-      - job: nuget
-        displayName: Nuget
-        dependsOn: semantic_release
-        steps:
           - script: |
-              git -c http.extraheader="AUTHORIZATION: basic $GH_TOKEN" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=5
-            displayName: repo refresh
-            env:
-              GH_TOKEN: $(githubToken)
-          - script: |
+              cat Core/Core.nuspec
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
+              cat Model.Interfaces/Interfaces.nuspec
               dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
             displayName: packaging
           - script: |
