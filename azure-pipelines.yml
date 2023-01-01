@@ -102,12 +102,13 @@ stages:
           - script: |
               npx semantic-release --debug
             displayName: Semantic Release
+            env:
+              GH_TOKEN: $(githubToken)
           - script: |
               echo "COMMAND===>"
               cat version.txt
               echo "COMMAND===>"
-            env:
-              GH_TOKEN: $(githubToken)
+            
 
       - job: workspace_refresh
         displayName: Workspace Refresh
