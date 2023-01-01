@@ -8,7 +8,7 @@
         <AssemblyName>EncyclopediaGalactica.Sdk.Core.Interfaces</AssemblyName>
         <RootNamespace>EncyclopediaGalactica.Sdk.Core.Interfaces</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.17</Version>
+        <Version>0.0.18</Version>
         <Title>Encyclopedia Galactica SDK Core Interfaces</Title>
         <Authors>Andras Csanyi</Authors>
         <Description>The package provides the SDK Core interface.</Description>
