@@ -1,3 +1,11 @@
+## [0.0.15](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.14...0.0.15) (2023-01-01)
+
+
+### Bug Fixes
+
+* publish Interfaces ([#16](https://github.com/EncyclopediaGalactica/Sdk.Core/issues/16)) ([02d5fef](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/02d5fef8120126f61aec7779af2bbc4f07d8e607))
+* semantic release process fix ([#17](https://github.com/EncyclopediaGalactica/Sdk.Core/issues/17)) ([934d582](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/934d58269ddb306d76bd6f027c094a2718b9c98d))
+
 ## [0.0.14](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.13...0.0.14) (2023-01-01)
 
 
