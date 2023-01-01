@@ -1,3 +1,10 @@
+## [0.0.18](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.17...0.0.18) (2023-01-01)
+
+
+### Bug Fixes
+
+* new nuget build ([#20](https://github.com/EncyclopediaGalactica/Sdk.Core/issues/20)) ([277df4e](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/277df4e2a303ee3684ebfa40d7e93e0410496e80))
+
 ## [0.0.17](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.16...0.0.17) (2023-01-01)
 
 
