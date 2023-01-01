@@ -8,7 +8,7 @@
         <AssemblyName>EncyclopediaGalactica.Sdk.Core.Model.Interfaces</AssemblyName>
         <RootNamespace>EncyclopediaGalactica.Sdk.Core.Model.Interfaces</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.18</Version>
+        <Version>0.0.19</Version>
         <Title>Encyclopedia Galactica SDK Model Interfaces</Title>
         <Authors>Andras Csanyi</Authors>
         <Description>The SDK Core uses two model objects, one for the request model and one for the response model. This package provides interfaces for both.</Description>

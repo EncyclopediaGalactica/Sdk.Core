@@ -8,7 +8,7 @@
         <AssemblyName>EncyclopediaGalactica.Sdk.Core</AssemblyName>
         <RootNamespace>EncyclopediaGalactica.Sdk.Core</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.18</Version>
+        <Version>0.0.19</Version>
         <Title>Encyclopedia Galactica SDK Core package</Title>
         <Authors>Andras Csanyi</Authors>
         <Description>SDK Core package provides services for communication with Encyclopedia Galactica REST Endpoints. This package must be used by all endpoint Sdks.</Description>
