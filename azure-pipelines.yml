@@ -109,14 +109,18 @@ stages:
         displayName: Workspace Refresh
         dependsOn: semantic_release
         steps:
-          - script:
+          - script: |
               git fetch --all
+          - script: |
+              echo "COMMAND===>"
+              cat version.txt
+              echo "COMMAND===>"
 
       - job: nuget
         displayName: Nuget
         dependsOn: workspace_refresh
-        workspace:
-          clean: all
+#        workspace:
+#          clean: all
         steps:
 #          - script: |
 #              git fetch --all
