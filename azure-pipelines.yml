@@ -105,6 +105,10 @@ stages:
             env:
               GH_TOKEN: $(githubToken)
           - script: |
+              dotnet clean
+              dotnet build --configuration Release
+            displayName: rebuild
+          - script: |
               dotnet nuget push Core/bin/Release/EncyclopediaGalactica.Sdk.Core.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
               dotnet nuget push Interfaces/bin/Release/EncyclopediaGalactica.Sdk.Core.Interfaces.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
               dotnet nuget push Model.Interfaces/bin/Release/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
