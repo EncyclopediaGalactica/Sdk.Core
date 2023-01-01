@@ -1,3 +1,10 @@
+## [0.0.14](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.13...0.0.14) (2023-01-01)
+
+
+### Bug Fixes
+
+* remove debug commands ([#15](https://github.com/EncyclopediaGalactica/Sdk.Core/issues/15)) ([d287e31](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/d287e31b6f3ac1f26127a368611ea7b8000d2e2e))
+
 ## [0.0.13](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.12...0.0.13) (2023-01-01)
 
 
