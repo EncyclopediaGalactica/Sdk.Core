@@ -5,7 +5,7 @@
         <version>0.0.14</version>
         <authors>Andras Csanyi</authors>
         <description>SDK Core Model Interfaces library of Encyclopedia Galactica</description>
-        <projectUrl>https://github.com/EncyclopediaGalactica/EncyclopediaGalactica/tree/main/Sdk/Sdk.Core</projectUrl>
+        <projectUrl>https://github.com/EncyclopediaGalactica/Sdk.Core</projectUrl>
         <title>
             SDK Core Model Interfaces library provides interfaces for being able to use SDK Core for communicating
             with Encyclopedia Galactica system
