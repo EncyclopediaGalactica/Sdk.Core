@@ -105,9 +105,16 @@ stages:
             env:
               GH_TOKEN: $(githubToken)
 
+      - job: workspace_refresh
+        displayName: Workspace Refresh
+        dependsOn: semantic_release
+        steps:
+          - script:
+              git fetch --all
+
       - job: nuget
         displayName: Nuget
-        dependsOn: semantic_release
+        dependsOn: workspace_refresh
         workspace:
           clean: all
         steps:
