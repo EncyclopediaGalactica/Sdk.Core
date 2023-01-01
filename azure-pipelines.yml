@@ -105,11 +105,6 @@ stages:
             env:
               GH_TOKEN: $(githubToken)
           - script: |
-              dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
-              dotnet pack Interfaces/Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
-              dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Model.Interfaces.nuspec
-            displayName: nuget packaging
-          - script: |
               dotnet nuget push Core/bin/Release/EncyclopediaGalactica.Sdk.Core.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
               dotnet nuget push Interfaces/bin/Release/EncyclopediaGalactica.Sdk.Core.Interfaces.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
               dotnet nuget push Model.Interfaces/bin/Release/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate

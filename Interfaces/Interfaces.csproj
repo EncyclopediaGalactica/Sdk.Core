@@ -7,6 +7,14 @@
         <Nullable>enable</Nullable>
         <AssemblyName>EncyclopediaGalactica.Sdk.Core.Interfaces</AssemblyName>
         <RootNamespace>EncyclopediaGalactica.Sdk.Core.Interfaces</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.17</Version>
+        <Title>Encyclopedia Galactica SDK Core Interfaces</Title>
+        <Authors>Andras Csanyi</Authors>
+        <Description>The package provides the SDK Core interface.</Description>
+        <PackageProjectUrl>https://github.com/EncyclopediaGalactica/Sdk.Core</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/EncyclopediaGalactica/Sdk.Core</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
