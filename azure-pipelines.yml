@@ -105,13 +105,7 @@ stages:
             env:
               GH_TOKEN: $(githubToken)
           - script: |
-              echo "COMMAND===>"
-              cat version.txt
-              echo "COMMAND===>"
-          - script: |
-              cat Core/Core.nuspec
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
-              cat Model.Interfaces/Interfaces.nuspec
               dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
             displayName: packaging
           - script: |
