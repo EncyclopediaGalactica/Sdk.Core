@@ -1,3 +1,10 @@
+## [0.0.17](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.16...0.0.17) (2023-01-01)
+
+
+### Bug Fixes
+
+* nuget targets in nuspec files ([#19](https://github.com/EncyclopediaGalactica/Sdk.Core/issues/19)) ([d83ec64](https://github.com/EncyclopediaGalactica/Sdk.Core/commit/d83ec641e53124bf8716de0a7eb1c7f20addf3cc))
+
 ## [0.0.16](https://github.com/EncyclopediaGalactica/Sdk.Core/compare/0.0.15...0.0.16) (2023-01-01)
 
 
