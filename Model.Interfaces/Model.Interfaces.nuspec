@@ -17,5 +17,6 @@
     </metadata>
     <files>
         <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.xml"/>
+        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.dll"/>
     </files>
 </package>
