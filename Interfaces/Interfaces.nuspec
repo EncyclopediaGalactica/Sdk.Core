@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <package>
     <metadata>
-        <id>EncyclopediaGalactica.Sdk.Core</id>
+        <id>EncyclopediaGalactica.Sdk.Core.Interfaces</id>
         <version>0.0.14</version>
         <authors>Andras Csanyi</authors>
-        <description>SDK Core library of Encyclopedia Galactica</description>
+        <description>SDK Core Interface library of Encyclopedia Galactica</description>
         <projectUrl>https://github.com/EncyclopediaGalactica/Sdk.Core</projectUrl>
         <title>
-            SDK Core library for SDK clients to communicate with Encyclopedia Galactica system
+            Interfaces library for SDK Core library.
         </title>
         <repository
                 type="git"
@@ -15,6 +15,6 @@
                 branch="main"/>
     </metadata>
     <files>
-        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.xml"/>
+        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Interfaces.xml"/>
     </files>
 </package>
