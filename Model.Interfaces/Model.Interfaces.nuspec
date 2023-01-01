@@ -16,7 +16,7 @@
                 branch="main"/>
     </metadata>
     <files>
-        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.xml"/>
-        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.dll"/>
+        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.xml" target="net7.0"/>
+        <file src="bin/Release/net7.0/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.dll" target="net7.0"/>
     </files>
 </package>
