@@ -108,35 +108,20 @@ stages:
               echo "COMMAND===>"
               cat version.txt
               echo "COMMAND===>"
-            
-
-      - job: workspace_refresh
-        displayName: Workspace Refresh
-        dependsOn: semantic_release
-        workspace:
-          clean: all
-        steps:
-          - script: |
-              git fetch --all
-          - script: |
-              echo "COMMAND===>"
-              cat version.txt
-              echo "COMMAND===>"
 
       - job: nuget
         displayName: Nuget
-        dependsOn: workspace_refresh
-#        workspace:
-#          clean: all
+        dependsOn: semantic_release
         steps:
-#          - script: |
-#              git fetch --all
-#            displayName: repo refresh
+          - script: |
+              git -c http.extraheader="AUTHORIZATION: basic $GH_TOKEN" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=5
+            displayName: repo refresh
+            env:
+              GH_TOKEN: $(githubToken)
           - script: |
               dotnet pack Core/Core.csproj --configuration Release --include-symbols -p:NuspecFile=Core.nuspec
               dotnet pack Model.Interfaces/Model.Interfaces.csproj --configuration Release --include-symbols -p:NuspecFile=Interfaces.nuspec
             displayName: packaging
-
           - script: |
               dotnet nuget push Core/bin/Release/EncyclopediaGalactica.Sdk.Core.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
               dotnet nuget push Model.Interfaces/bin/Release/EncyclopediaGalactica.Sdk.Core.Model.Interfaces.`cat version.txt`.nupkg --api-key $GH_TOKEN --source "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json" --skip-duplicate
